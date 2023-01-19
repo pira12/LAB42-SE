@@ -18,7 +18,6 @@ public class HandController : MonoBehaviour
 {
     ActionBasedController controller;
 
-    // public Hand hand;
     [SerializeField] private Hand hand;
 
     // Start is called before the first frame update
