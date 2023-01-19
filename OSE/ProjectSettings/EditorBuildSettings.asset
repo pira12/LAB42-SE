@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestAnimatedHands.unity
     guid: aeb646f5eb9ca6e4c88bde1e512e81d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial Room.unity
     guid: f77d44367eb88534195aec74ea469ecf
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 4c98e5a94a6a4b646aaccac48ea4cada
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0617fc3e865969f45bb49d2d1bd61657,
       type: 2}
