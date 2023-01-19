@@ -28,7 +28,7 @@ public class ButtonVR : MonoBehaviour
     {
         if (!isPressed)
         {
-            button.transform.localPosition = new Vector3(0, 0.003f, 0);
+            button.transform.localPosition = new Vector3(0, 0.041f, 0);
             presser = other.gameObject;
             onPress.Invoke();
             sound.Play();
@@ -40,7 +40,7 @@ public class ButtonVR : MonoBehaviour
     {
         if (other.gameObject == presser)
         {
-            button.transform.localPosition = new Vector3(0, 0.015f, 0);
+            button.transform.localPosition = new Vector3(0, 0.169f, 0);
             onRelease.Invoke();
             isPressed = false;
         }
@@ -51,6 +51,14 @@ public class ButtonVR : MonoBehaviour
         // Up the current_idex with one to move to the next slide.
         current_index = WB_NEXT.slide_index;
         current_index++;
+        WB_NEXT.UpdateVector(current_index);
+    }
+
+    public void UpdateWB_PREV()
+    {
+        // Up the current_idex with one to move to the next slide.
+        current_index = WB_NEXT.slide_index;
+        current_index--;
         WB_NEXT.UpdateVector(current_index);
     }
 }
