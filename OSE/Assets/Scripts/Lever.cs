@@ -4,7 +4,9 @@
  * Date: January 2023
  *
  * Summary:
- * [TODO]
+ * Controller for the lever gameObject.
+ * Check if the controllers are collide with a box collider before allowing,
+ * the lever to be squeezed by the player.
  */
 
 using System.Collections;
@@ -16,6 +18,12 @@ public class Lever : MonoBehaviour
 {
     //
     // Summary:
+    //     Variable to check if the lever is squeezed by the player.
+    [HideInInspector]
+    public bool leverSqueezed = false;
+
+    //
+    // Summary:
     //     Keybind for squeezing the lever.
     [SerializeField]
     private InputActionReference reference = null;
@@ -23,7 +31,8 @@ public class Lever : MonoBehaviour
     //
     // Summary:
     //     Reference to the pin to check if it has been removed.
-    [SerializeField] private GameObject pin;
+    [SerializeField]
+    private GameObject pin;
 
     //
     // Summary:
@@ -36,14 +45,6 @@ public class Lever : MonoBehaviour
     private void OnEnable()
     {
         reference.action.Enable();
-    }
-
-    //
-    // Summary:
-    //     On disable, stop monitoring the action and triggering callbacks.
-    private void OnDisable()
-    {
-        reference.action.Disable();
     }
 
     //
@@ -70,7 +71,12 @@ public class Lever : MonoBehaviour
             return;
         }
 
-        reference.action.performed += SqueezeLever;
+        // Add binding for start of button hold.
+        reference.action.started += SqueezeLever;
+
+        // Add binding for release of button hold.
+        reference.action.performed += UnsqueezeLever;
+        reference.action.canceled += UnsqueezeLever;
     }
 
     //
@@ -85,13 +91,22 @@ public class Lever : MonoBehaviour
         }
 
         // Check if the user is in range to squeeze the lever.
-        if (gameObject.activeInHierarchy && !inProximity)
+        if (gameObject.activeInHierarchy && inProximity)
         {
+            leverSqueezed = true;
+        }
+    }
+
+    //
+    // Summary:
+    //     Unsqueeze the lever of the fire extinguisher.
+    private void UnsqueezeLever(InputAction.CallbackContext ctx)
+    {
+        // Check if the lever is being squeezed.
+        if (!leverSqueezed) {
             return;
         }
 
-        // TODO: spray the content of the fire extinguisher.
-        Debug.Log("Squeezing Lever...");
-        gameObject.SetActive(!gameObject.activeInHierarchy);
+        leverSqueezed = false;
     }
 }

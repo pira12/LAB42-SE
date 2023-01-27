@@ -4,7 +4,9 @@
  * Date: January 2023
  *
  * Summary:
- * [TODO]
+ * Controller for the lever gameObject.
+ * Check if the controllers are collide with a box collider before allowing,
+ * the user to remove the pin form the fire extinguisher.
  */
 
 using System.Collections;
@@ -32,18 +34,15 @@ public class Pin : MonoBehaviour
 
     //
     // Summary:
+    //     Audio fragment to play when removing pin.
+    private AudioSource sound;
+
+    //
+    // Summary:
     //     On enable, monitor the action and trigger callbacks.
     private void OnEnable()
     {
         reference.action.Enable();
-    }
-
-    //
-    // Summary:
-    //     On disable, stop monitoring the action and triggering callbacks.
-    private void OnDisable()
-    {
-        reference.action.Disable();
     }
 
     //
@@ -73,6 +72,7 @@ public class Pin : MonoBehaviour
             return;
         }
 
+        sound = GetComponent<AudioSource>();
         reference.action.performed += RemovePin;
     }
 
@@ -94,7 +94,7 @@ public class Pin : MonoBehaviour
         }
 
         // Hide the pin and its components.
-        Debug.Log("Removing Pin...");
+        sound.Play();
         gameObject.SetActive(false);
     }
 }

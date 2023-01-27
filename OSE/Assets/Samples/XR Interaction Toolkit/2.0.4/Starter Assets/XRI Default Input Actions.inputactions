@@ -1113,7 +1113,7 @@
                     "name": "",
                     "id": "b578c689-25ff-4abe-ad2b-b236c3c16c3b",
                     "path": "<XRController>{RightHand}/secondaryButton",
-                    "interactions": "",
+                    "interactions": "SlowTap",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Lever",
