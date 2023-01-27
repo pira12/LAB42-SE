@@ -18,12 +18,6 @@ public class Lever : MonoBehaviour
 {
     //
     // Summary:
-    //     Variable to check if the lever is squeezed by the player.
-    [HideInInspector]
-    public bool leverSqueezed = false;
-
-    //
-    // Summary:
     //     Keybind for squeezing the lever.
     [SerializeField]
     private InputActionReference reference = null;
@@ -36,8 +30,24 @@ public class Lever : MonoBehaviour
 
     //
     // Summary:
+    //     Particle System that emits the contents of the fire extinguisher.
+    [SerializeField]
+    private ParticleSystem hose;
+
+    //
+    // Summary:
+    //     Variable to check if the lever is squeezed by the player.
+    private bool leverSqueezed = false;
+
+    //
+    // Summary:
     //     Variable to check if the controller is close to the pin.
     private bool inProximity = false;
+
+    //
+    // Summary:
+    //     Variable to toggle the emission of the particle system.
+    private ParticleSystem.EmissionModule emission;
 
     //
     // Summary:
@@ -63,6 +73,9 @@ public class Lever : MonoBehaviour
         inProximity = false;
     }
 
+    //
+    // Summary:
+    //     On start, check and connect the input action reference to functions.
     private void Start()
     {
         // Check if an input action reference is set.
@@ -71,10 +84,13 @@ public class Lever : MonoBehaviour
             return;
         }
 
-        // Add binding for start of button hold.
-        reference.action.started += SqueezeLever;
+        // Play the particle system, but disable the emission.
+        emission = hose.emission;
+        emission.enabled = false;
+        hose.Play();
 
-        // Add binding for release of button hold.
+        // Connect the input action reference with the functions to execute.
+        reference.action.started += SqueezeLever;
         reference.action.performed += UnsqueezeLever;
         reference.action.canceled += UnsqueezeLever;
     }
@@ -84,17 +100,14 @@ public class Lever : MonoBehaviour
     //     Squeeze the lever of the fire extinguisher.
     private void SqueezeLever(InputAction.CallbackContext ctx)
     {
-        // Check if the pin has been removed.
-        if (pin.activeInHierarchy)
+        // Check if the pin has been removed and the user is in range.
+        if (pin.activeInHierarchy || !inProximity)
         {
             return;
         }
 
-        // Check if the user is in range to squeeze the lever.
-        if (gameObject.activeInHierarchy && inProximity)
-        {
-            leverSqueezed = true;
-        }
+        leverSqueezed = true;
+        emission.enabled = true;
     }
 
     //
@@ -108,5 +121,6 @@ public class Lever : MonoBehaviour
         }
 
         leverSqueezed = false;
+        emission.enabled = false;
     }
 }

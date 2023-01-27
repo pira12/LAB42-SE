@@ -1614,8 +1614,6 @@ struct ASN1_t33549D58797C9C33AA83F13AD184EAA00C584A6F;
 struct AchievementsManager_t1EA1F8D88BF7F4794F3D09A046AF326024CB258F;
 // System.Action
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
-// UnityEngine.XR.Interaction.Toolkit.ActionBasedController
-struct ActionBasedController_tB9D8E7E013191571EA5507EA68057414B6969A68;
 // UnityEngine.XR.Interaction.Toolkit.ActivateEvent
 struct ActivateEvent_tA1D392B588AC99958CB847AE6911DC5131BCFB43;
 // Oculus.Interaction.PoseDetection.Debug.ActiveStateDebugTree
@@ -1902,8 +1900,6 @@ struct Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E;
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 // UnityEngine.Rendering.HableCurve
 struct HableCurve_t8410F0B8D99335EA2B9F6AFA92227879E24B1876;
-// Hand
-struct Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1;
 // Oculus.Interaction.Input.Hand
 struct Hand_tC61A0092374A077C2B2C040DC5CBF6D768A92B9A;
 // Oculus.Interaction.HandConfidenceVisual
@@ -15195,6 +15191,23 @@ struct FloatIntBits_t4D1F71F72A8F48361C3F82D4F6464315C47BFD77
 		};
 		uint8_t FloatIntBits_t4D1F71F72A8F48361C3F82D4F6464315C47BFD77__padding[4];
 	};
+};
+
+// UnityEngine.ParticleSystem/EmissionModule
+struct EmissionModule_t0F469FA4A08003F6D9C610D2F716A9DFDB9A3678 
+{
+	// UnityEngine.ParticleSystem UnityEngine.ParticleSystem/EmissionModule::m_ParticleSystem
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___m_ParticleSystem_0;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.ParticleSystem/EmissionModule
+struct EmissionModule_t0F469FA4A08003F6D9C610D2F716A9DFDB9A3678_marshaled_pinvoke
+{
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___m_ParticleSystem_0;
+};
+// Native definition for COM marshalling of UnityEngine.ParticleSystem/EmissionModule
+struct EmissionModule_t0F469FA4A08003F6D9C610D2F716A9DFDB9A3678_marshaled_com
+{
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___m_ParticleSystem_0;
 };
 
 // UnityEngine.Experimental.Rendering.ProbeBrickIndex/BrickMeta
@@ -31162,6 +31175,15 @@ struct FlyText_t959BA5BADDAA2DC16EF308511A28A513762564F8  : public MonoBehaviour
 	float ___m_eol_6;
 };
 
+// FollowPhysics
+struct FollowPhysics_t33D6101821AC1D657C423ED401C14E5AF6A9B65F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Transform FollowPhysics::target
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___target_4;
+	// UnityEngine.Rigidbody FollowPhysics::rb
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb_5;
+};
+
 // Oculus.Interaction.HandGrab.FollowTargetProvider
 struct FollowTargetProvider_tEAF324DD11C2B03960560CBCB3C928A360C79492  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -31390,41 +31412,6 @@ struct HTCViveControllerProfile_t65F40E7ED71E6833A8252AC7F7A2CD250A5A78C4  : pub
 {
 };
 
-// Hand
-struct Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.Single Hand::animationSpeed
-	float ___animationSpeed_4;
-	// UnityEngine.Animator Hand::animator
-	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___animator_5;
-	// System.Single Hand::gripTarget
-	float ___gripTarget_6;
-	// System.Single Hand::triggerTarget
-	float ___triggerTarget_7;
-	// System.Single Hand::gripCurrent
-	float ___gripCurrent_8;
-	// System.Single Hand::triggerCurrent
-	float ___triggerCurrent_9;
-	// System.String Hand::animatorGripParam
-	String_t* ___animatorGripParam_10;
-	// System.String Hand::animatorTriggerParam
-	String_t* ___animatorTriggerParam_11;
-	// UnityEngine.GameObject Hand::followObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___followObject_12;
-	// System.Single Hand::followSpeed
-	float ___followSpeed_13;
-	// System.Single Hand::rotateSpeed
-	float ___rotateSpeed_14;
-	// UnityEngine.Vector3 Hand::positionOffset
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positionOffset_15;
-	// UnityEngine.Vector3 Hand::rotationOffset
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rotationOffset_16;
-	// UnityEngine.Transform Hand::_followTarget
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ____followTarget_17;
-	// UnityEngine.Rigidbody Hand::_body
-	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ____body_18;
-};
-
 // OVRTouchSample.Hand
 struct Hand_t0A62347EF4DB551FDA3B99B5637AD55098FE07A8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -31483,15 +31470,6 @@ struct HandConfidenceVisual_t08FBCAA9BA61BA8E42F35D09BCB639CDE2D3321B  : public 
 	bool ____started_10;
 	// System.Single Oculus.Interaction.HandConfidenceVisual::_lastTime
 	float ____lastTime_11;
-};
-
-// HandController
-struct HandController_tD866B993094B1833037D30396BB39F6C15DDC10C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// UnityEngine.XR.Interaction.Toolkit.ActionBasedController HandController::controller
-	ActionBasedController_tB9D8E7E013191571EA5507EA68057414B6969A68* ___controller_4;
-	// Hand HandController::hand
-	Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1* ___hand_5;
 };
 
 // Oculus.Interaction.HandDebugVisual
@@ -32485,16 +32463,18 @@ struct LensFlareComponentSRP_tF068937A1EC9EB063AF855DB4994A1D2A5E3EFDC  : public
 // Lever
 struct Lever_t95EDCA49D4E471632B36CBB691B8701939683419  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.MeshRenderer Lever::boxRenderer
-	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___boxRenderer_4;
-	// System.Boolean Lever::leverSqueezed
-	bool ___leverSqueezed_5;
 	// UnityEngine.InputSystem.InputActionReference Lever::reference
-	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___reference_6;
+	InputActionReference_t64730C6B41271E0983FC21BFB416169F5D6BC4A1* ___reference_4;
 	// UnityEngine.GameObject Lever::pin
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pin_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pin_5;
+	// UnityEngine.ParticleSystem Lever::hose
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___hose_6;
+	// System.Boolean Lever::leverSqueezed
+	bool ___leverSqueezed_7;
 	// System.Boolean Lever::inProximity
 	bool ___inProximity_8;
+	// UnityEngine.ParticleSystem/EmissionModule Lever::emission
+	EmissionModule_t0F469FA4A08003F6D9C610D2F716A9DFDB9A3678 ___emission_9;
 };
 
 // UnityEngine.LightAnchor
@@ -33648,6 +33628,8 @@ struct Pin_t436B943A646153A43944025466CB8B68CE763843  : public MonoBehaviour_t53
 	bool ___inProximity_5;
 	// System.Boolean Pin::hasPin
 	bool ___hasPin_6;
+	// UnityEngine.AudioSource Pin::sound
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___sound_7;
 };
 
 // Oculus.Interaction.Surfaces.PlaneSurface
@@ -37608,6 +37590,13 @@ struct DistantInteractionPolylineVisual_t2291BAA19519BA2FCCE862EFAE55E2EA31D3948
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ____lineMaterial_18;
 	// Oculus.Interaction.PolylineRenderer Oculus.Interaction.DistanceReticles.DistantInteractionPolylineVisual::_polylineRenderer
 	PolylineRenderer_t5066749B173A1D4472C6D172B7199B4DCBD01CB0* ____polylineRenderer_19;
+};
+
+// DoorGrabbable
+struct DoorGrabbable_t77F68A094DC9E2D741AA1049147D95EA888644A8  : public OVRGrabbable_t322F6468B588212B888E9397723397A16E7614B5
+{
+	// UnityEngine.Transform DoorGrabbable::handler
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___handler_12;
 };
 
 // UnityEngine.EventSystems.EventSystem
@@ -47697,6 +47686,10 @@ struct WitUnityRequest_t040B0FFC28A096A5F91C425A5BAEE4D344550BBB_StaticFields
 
 // UnityEngine.UIElements.PanelRaycaster/FloatIntBits
 
+// UnityEngine.ParticleSystem/EmissionModule
+
+// UnityEngine.ParticleSystem/EmissionModule
+
 // UnityEngine.Experimental.Rendering.ProbeBrickIndex/BrickMeta
 
 // UnityEngine.Experimental.Rendering.ProbeBrickIndex/BrickMeta
@@ -51141,6 +51134,10 @@ struct FingerFeatureStateProvider_tF68DAE5C112170CA24F6F50E78AB318AFC593BAE_Stat
 
 // Oculus.Platform.Samples.VrHoops.FlyText
 
+// FollowPhysics
+
+// FollowPhysics
+
 // Oculus.Interaction.HandGrab.FollowTargetProvider
 
 // Oculus.Interaction.HandGrab.FollowTargetProvider
@@ -51194,10 +51191,6 @@ struct FurnitureSpawner_tC3C532786588E281CD80DCB11C39A15F78B6DC2B_StaticFields
 
 // UnityEngine.XR.OpenXR.Features.Interactions.HTCViveControllerProfile
 
-// Hand
-
-// Hand
-
 // OVRTouchSample.Hand
 
 // OVRTouchSample.Hand
@@ -51205,10 +51198,6 @@ struct FurnitureSpawner_tC3C532786588E281CD80DCB11C39A15F78B6DC2B_StaticFields
 // Oculus.Interaction.HandConfidenceVisual
 
 // Oculus.Interaction.HandConfidenceVisual
-
-// HandController
-
-// HandController
 
 // Oculus.Interaction.HandDebugVisual
 
@@ -52790,6 +52779,10 @@ struct DebugUIHandlerMessageBox_t324CB4FCA7F0B75000212BEC0B19D0C12A7F2C55_Static
 // Oculus.Interaction.DistanceReticles.DistantInteractionPolylineVisual
 
 // Oculus.Interaction.DistanceReticles.DistantInteractionPolylineVisual
+
+// DoorGrabbable
+
+// DoorGrabbable
 
 // UnityEngine.EventSystems.EventSystem
 struct EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707_StaticFields
@@ -57964,22 +57957,22 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7876[8] =
 	static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___button_4)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___onPress_5)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___onRelease_6)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___presser_7)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___sound_8)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___isPressed_9)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___WB_NEXT_10)),static_cast<int32_t>(offsetof(ButtonVR_tD5B857C6BE7F838BD968388CC355D331337F8ADE, ___current_index_11)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7877[1] = 
 {
+	static_cast<int32_t>(offsetof(DoorGrabbable_t77F68A094DC9E2D741AA1049147D95EA888644A8, ___handler_12)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7878[1] = 
+{
 	static_cast<int32_t>(offsetof(Extinguisher_t53A47DD35619066181FE3D4982792B1C04FD4A35, ___amountExtinguishedPerSecond_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7878[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7879[7] = 
 {
 	static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___currentIntensity_4)),static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___startIntensities_5)),static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___fireParticleSystems_6)),static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___timeLastWatered_7)),static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___regenDelay_8)),static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___regenRate_9)),static_cast<int32_t>(offsetof(Fire_tFDE4C5C28A183942ABC5AF2F45F6E9611B779656, ___isLit_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7879[15] = 
-{
-	static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___animationSpeed_4)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___animator_5)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___gripTarget_6)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___triggerTarget_7)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___gripCurrent_8)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___triggerCurrent_9)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___animatorGripParam_10)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___animatorTriggerParam_11)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___followObject_12)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___followSpeed_13)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___rotateSpeed_14)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___positionOffset_15)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ___rotationOffset_16)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ____followTarget_17)),static_cast<int32_t>(offsetof(Hand_t68D826D6A2994AEFBCC1627833F8CA60C8A4A7B1, ____body_18)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7880[2] = 
 {
-	static_cast<int32_t>(offsetof(HandController_tD866B993094B1833037D30396BB39F6C15DDC10C, ___controller_4)),static_cast<int32_t>(offsetof(HandController_tD866B993094B1833037D30396BB39F6C15DDC10C, ___hand_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7881[5] = 
+	static_cast<int32_t>(offsetof(FollowPhysics_t33D6101821AC1D657C423ED401C14E5AF6A9B65F, ___target_4)),static_cast<int32_t>(offsetof(FollowPhysics_t33D6101821AC1D657C423ED401C14E5AF6A9B65F, ___rb_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7881[6] = 
 {
-	static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___boxRenderer_4)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___leverSqueezed_5)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___reference_6)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___pin_7)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___inProximity_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7882[3] = 
+	static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___reference_4)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___pin_5)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___hose_6)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___leverSqueezed_7)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___inProximity_8)),static_cast<int32_t>(offsetof(Lever_t95EDCA49D4E471632B36CBB691B8701939683419, ___emission_9)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7882[4] = 
 {
-	static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___reference_4)),static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___inProximity_5)),static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___hasPin_6)),};
+	static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___reference_4)),static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___inProximity_5)),static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___hasPin_6)),static_cast<int32_t>(offsetof(Pin_t436B943A646153A43944025466CB8B68CE763843, ___sound_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7883[2] = 
 {
 	static_cast<int32_t>(offsetof(Slide_back_t9075F4937A98F95CBAE1BE5D3B9D285F5D5620F8, ___WB_BACK_4)),static_cast<int32_t>(offsetof(Slide_back_t9075F4937A98F95CBAE1BE5D3B9D285F5D5620F8, ___current_index_5)),};
