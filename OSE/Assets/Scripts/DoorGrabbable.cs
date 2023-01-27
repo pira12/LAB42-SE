@@ -10,8 +10,8 @@ public class DoorGrabbable : OVRGrabbable
     {
         base.GrabEnd(Vector3.zero, Vector3.zero);
 
-        transform.position = handler.transform.position;
-        transform.rotation = handler.transform.rotation;
+        transform.position = handler.position;
+        transform.rotation = handler.rotation;
     
         Rigidbody rbhandler = handler.GetComponent<Rigidbody>();
         rbhandler.velocity = Vector3.zero;
