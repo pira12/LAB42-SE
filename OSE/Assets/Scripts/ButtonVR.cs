@@ -11,7 +11,7 @@ public class ButtonVR : MonoBehaviour
     GameObject presser;
     AudioSource sound;
     bool isPressed;
-    
+
     private Slide_main WB_NEXT;
     private int current_index;
     // Start is called before the first frame update
@@ -62,4 +62,3 @@ public class ButtonVR : MonoBehaviour
         WB_NEXT.UpdateVector(current_index);
     }
 }
-

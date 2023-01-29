@@ -4,7 +4,9 @@
  * Date: January 2023
  *
  * Summary:
- * [TODO]
+ * Controller for the lever gameObject.
+ * Check if the controllers are collide with a box collider before allowing,
+ * the lever to be squeezed by the player.
  */
 
 using System.Collections;
@@ -23,7 +25,19 @@ public class Lever : MonoBehaviour
     //
     // Summary:
     //     Reference to the pin to check if it has been removed.
-    [SerializeField] private GameObject pin;
+    [SerializeField]
+    private GameObject pin;
+
+    //
+    // Summary:
+    //     Particle System that emits the contents of the fire extinguisher.
+    [SerializeField]
+    private ParticleSystem hose;
+
+    //
+    // Summary:
+    //     Variable to check if the lever is squeezed by the player.
+    private bool leverSqueezed = false;
 
     //
     // Summary:
@@ -32,18 +46,15 @@ public class Lever : MonoBehaviour
 
     //
     // Summary:
+    //     Variable to toggle the emission of the particle system.
+    private ParticleSystem.EmissionModule emission;
+
+    //
+    // Summary:
     //     On enable, monitor the action and trigger callbacks.
     private void OnEnable()
     {
         reference.action.Enable();
-    }
-
-    //
-    // Summary:
-    //     On disable, stop monitoring the action and triggering callbacks.
-    private void OnDisable()
-    {
-        reference.action.Disable();
     }
 
     //
@@ -62,6 +73,9 @@ public class Lever : MonoBehaviour
         inProximity = false;
     }
 
+    //
+    // Summary:
+    //     On start, check and connect the input action reference to functions.
     private void Start()
     {
         // Check if an input action reference is set.
@@ -70,7 +84,15 @@ public class Lever : MonoBehaviour
             return;
         }
 
-        reference.action.performed += SqueezeLever;
+        // Play the particle system, but disable the emission.
+        emission = hose.emission;
+        emission.enabled = false;
+        hose.Play();
+
+        // Connect the input action reference with the functions to execute.
+        reference.action.started += SqueezeLever;
+        reference.action.performed += UnsqueezeLever;
+        reference.action.canceled += UnsqueezeLever;
     }
 
     //
@@ -78,20 +100,27 @@ public class Lever : MonoBehaviour
     //     Squeeze the lever of the fire extinguisher.
     private void SqueezeLever(InputAction.CallbackContext ctx)
     {
-        // Check if the pin has been removed.
-        if (pin.activeInHierarchy)
+        // Check if the pin has been removed and the user is in range.
+        if (pin.activeInHierarchy || !inProximity)
         {
             return;
         }
 
-        // Check if the user is in range to squeeze the lever.
-        if (gameObject.activeInHierarchy && !inProximity)
-        {
+        leverSqueezed = true;
+        emission.enabled = true;
+    }
+
+    //
+    // Summary:
+    //     Unsqueeze the lever of the fire extinguisher.
+    private void UnsqueezeLever(InputAction.CallbackContext ctx)
+    {
+        // Check if the lever is being squeezed.
+        if (!leverSqueezed) {
             return;
         }
 
-        // TODO: spray the content of the fire extinguisher.
-        Debug.Log("Squeezing Lever...");
-        gameObject.SetActive(!gameObject.activeInHierarchy);
+        leverSqueezed = false;
+        emission.enabled = false;
     }
 }
