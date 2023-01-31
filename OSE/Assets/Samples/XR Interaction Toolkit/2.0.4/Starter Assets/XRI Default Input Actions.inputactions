@@ -1100,6 +1100,17 @@
             "bindings": [
                 {
                     "name": "",
+                    "id": "e31c6052-1aec-407b-aada-aa812bb8dfb2",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Pin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "dfe082ca-3f4e-4952-81a7-170fe5707a4c",
                     "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
@@ -1111,8 +1122,19 @@
                 },
                 {
                     "name": "",
-                    "id": "b578c689-25ff-4abe-ad2b-b236c3c16c3b",
-                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "id": "3d7931c1-1eee-44b7-a217-4622736200b2",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "SlowTap",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Lever",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fec635e3-caf4-463f-b5b1-9edc6d531003",
+                    "path": "<XRController>{RightHand}/triggerPressed",
                     "interactions": "SlowTap",
                     "processors": "",
                     "groups": "Generic XR Controller",

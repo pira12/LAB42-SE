@@ -37,7 +37,8 @@ public class Lever : MonoBehaviour
     //
     // Summary:
     //     Variable to check if the lever is squeezed by the player.
-    private bool leverSqueezed = false;
+    [HideInInspector]
+    public bool leverSqueezed = false;
 
     //
     // Summary:

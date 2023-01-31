@@ -5141,6 +5141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountExtinguishedPerSecond: 0.3
+  lever: {fileID: 8909156669529940508}
+  type: 3
 --- !u!1 &8909156668921209775
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,6 +5446,7 @@ MonoBehaviour:
     type: 3}
   pin: {fileID: 8909156668921209775}
   hose: {fileID: 8909156668502214934}
+  leverSqueezed: 0
 --- !u!1 &8909156669790488852
 GameObject:
   m_ObjectHideFlags: 0
