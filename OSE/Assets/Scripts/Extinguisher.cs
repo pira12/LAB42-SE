@@ -17,9 +17,6 @@ public class Extinguisher : MonoBehaviour
     private float amountExtinguishedPerSecond = 0.3f;
 
     [SerializeField]
-    private Lever lever;
-
-    [SerializeField]
     private BlusserType type;
 
     // Update is called once per frame
@@ -32,8 +29,8 @@ public class Extinguisher : MonoBehaviour
         if (Physics.Raycast(origin, direction, out RaycastHit hit, 100f) &&
             hit.collider.TryGetComponent(out Fire fire))
         {
-            // Check if the fire extinguisher is of the right type and used.
-            if (lever.leverSqueezed && fire.type == type)
+            // Check if the fire extinguisher is of the right type.
+            if (fire.type == type)
             {
                 fire.TryExtinguish(amountExtinguishedPerSecond * Time.deltaTime);
             }
