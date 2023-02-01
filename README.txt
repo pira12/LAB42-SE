@@ -10,6 +10,7 @@ Rénan:
 Maken van projectplan en plattegrond. 
 Maken en aanpassen van 3D modellen en textures.
 Plannen en maken van ontruimingsplannen.
+Tutorial slides gemaakt.
 
 Yoshi:
 
