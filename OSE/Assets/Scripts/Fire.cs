@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
+    AudioSource sound;
     [SerializeField, Range(0f, 1.0f)] private float currentIntensity = 1.0f;
     private float [] startIntensities = new float[0];
 
@@ -17,6 +18,8 @@ public class Fire : MonoBehaviour
 
     private void Start()
     {
+        sound = GetComponent<AudioSource>();
+        sound.Play();
         startIntensities = new float[fireParticleSystems.Length];
 
         for (int i = 0; i < fireParticleSystems.Length; i++) 
@@ -46,6 +49,7 @@ public class Fire : MonoBehaviour
         if (currentIntensity <= 0 )
         {
             isLit = false;
+            sound.Stop();
             return true;
         }
 

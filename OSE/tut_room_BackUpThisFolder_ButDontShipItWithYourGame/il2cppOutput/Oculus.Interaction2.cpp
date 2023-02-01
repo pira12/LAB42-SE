@@ -547,8 +547,6 @@ struct FingerShapes_tB688B596C28AF6D38BEBA5C15BECF9EBD4E85D7F;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 // Oculus.Interaction.Grabbable
 struct Grabbable_tC5F191DABDA6ADE2D8270476D37B4E122C1387D3;
-// Oculus.Interaction.GrabbableUnityEventWrapper
-struct GrabbableUnityEventWrapper_t43DEE24D52F9FD460D671EDD7B8494BA7EA89E51;
 // UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 // Oculus.Interaction.GrabAPI.HandGrabAPI
@@ -1640,11 +1638,6 @@ struct FingerFeatureThresholds_t7D0F0EADC039D8A69D744463290823FD16144739  : publ
 
 // Oculus.Interaction.PoseDetection.FingerShapes
 struct FingerShapes_tB688B596C28AF6D38BEBA5C15BECF9EBD4E85D7F  : public RuntimeObject
-{
-};
-
-// Oculus.Interaction.GrabbableUnityEventWrapper
-struct GrabbableUnityEventWrapper_t43DEE24D52F9FD460D671EDD7B8494BA7EA89E51  : public RuntimeObject
 {
 };
 
@@ -5586,10 +5579,6 @@ struct FingerShapes_tB688B596C28AF6D38BEBA5C15BECF9EBD4E85D7F_StaticFields
 };
 
 // Oculus.Interaction.PoseDetection.FingerShapes
-
-// Oculus.Interaction.GrabbableUnityEventWrapper
-
-// Oculus.Interaction.GrabbableUnityEventWrapper
 
 // System.Reflection.MemberInfo
 
@@ -13977,22 +13966,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ActiveStateUnityEventWrapper__ctor_mE381
 		// private bool _emitOnFirstUpdate = true;
 		__this->____emitOnFirstUpdate_8 = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void Oculus.Interaction.GrabbableUnityEventWrapper::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GrabbableUnityEventWrapper__ctor_mB4AA80D99B568EC1D9301A327435DA4AB3554276 (GrabbableUnityEventWrapper_t43DEE24D52F9FD460D671EDD7B8494BA7EA89E51* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
