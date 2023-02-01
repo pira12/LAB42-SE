@@ -30,7 +30,8 @@ public class Pin : MonoBehaviour
     //
     // Summary:
     //     Bool to check if the pin is in the fire extinguisher.
-    private bool hasPin = true;
+    [SerializeField]
+    private GameObject pinMesh;
 
     //
     // Summary:
@@ -82,7 +83,7 @@ public class Pin : MonoBehaviour
     private void RemovePin(InputAction.CallbackContext ctx)
     {
         // Check if there is a pin to be removed.
-        if (!hasPin)
+        if (!pinMesh.activeInHierarchy)
         {
             return;
         }
@@ -95,6 +96,6 @@ public class Pin : MonoBehaviour
 
         // Hide the pin and its components.
         sound.Play();
-        gameObject.SetActive(false);
+        pinMesh.SetActive(false);
     }
 }

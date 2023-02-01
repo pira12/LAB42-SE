@@ -26,29 +26,23 @@ public class Lever : MonoBehaviour
     // Summary:
     //     Reference to the pin to check if it has been removed.
     [SerializeField]
-    private GameObject pin;
+    private GameObject pinMesh;
 
     //
     // Summary:
-    //     Particle System that emits the contents of the fire extinguisher.
+    //     GameObject with the particle system.
     [SerializeField]
-    private ParticleSystem hose;
-
-    //
-    // Summary:
-    //     Variable to check if the lever is squeezed by the player.
-    [HideInInspector]
-    public bool leverSqueezed = false;
-
-    //
-    // Summary:
-    //     Variable to check if the controller is close to the pin.
-    private bool inProximity = false;
+    private GameObject hose;
 
     //
     // Summary:
     //     Variable to toggle the emission of the particle system.
     private ParticleSystem.EmissionModule emission;
+
+    //
+    // Summary:
+    //     Variable to check if the controller is close to the pin.
+    private bool inProximity = false;
 
     //
     // Summary:
@@ -86,9 +80,10 @@ public class Lever : MonoBehaviour
         }
 
         // Play the particle system, but disable the emission.
-        emission = hose.emission;
+        ParticleSystem particleSystem = hose.GetComponent<ParticleSystem>();
+        emission = particleSystem.emission;
         emission.enabled = false;
-        hose.Play();
+        particleSystem.Play();
 
         // Connect the input action reference with the functions to execute.
         reference.action.started += SqueezeLever;
@@ -102,13 +97,13 @@ public class Lever : MonoBehaviour
     private void SqueezeLever(InputAction.CallbackContext ctx)
     {
         // Check if the pin has been removed and the user is in range.
-        if (pin.activeInHierarchy || !inProximity)
+        if (pinMesh.activeInHierarchy || !inProximity)
         {
             return;
         }
 
-        leverSqueezed = true;
         emission.enabled = true;
+        hose.SetActive(true);
     }
 
     //
@@ -117,11 +112,11 @@ public class Lever : MonoBehaviour
     private void UnsqueezeLever(InputAction.CallbackContext ctx)
     {
         // Check if the lever is being squeezed.
-        if (!leverSqueezed) {
+        if (!hose.activeInHierarchy) {
             return;
         }
 
-        leverSqueezed = false;
         emission.enabled = false;
+        hose.SetActive(false);
     }
 }

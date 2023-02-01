@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reference: {fileID: -291222976591157573, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
+  pinMesh: {fileID: 6044961673216594613}
 --- !u!82 &6044961673331721851
 AudioSource:
   m_ObjectHideFlags: 0
