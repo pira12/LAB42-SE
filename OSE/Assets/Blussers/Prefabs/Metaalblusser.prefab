@@ -5140,6 +5140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountExtinguishedPerSecond: 0.3
+  type: 1
 --- !u!1001 &1882131128218876319
 PrefabInstance:
   m_ObjectHideFlags: 0
