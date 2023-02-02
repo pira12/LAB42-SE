@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum BlusserType
 {
-    co2,
+    c02,
     metaal,
     poeder,
     schuim,
@@ -22,20 +22,13 @@ public class Extinguisher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 origin = gameObject.transform.position;
-        Vector3 direction = gameObject.transform.forward;
-
-        // Cast a ray from origin to direction and check for collision.
-        if (Physics.Raycast(origin, direction, out RaycastHit hit, 100f) &&
-            hit.collider.TryGetComponent(out Fire fire))
+        if (Physics.Raycast(gameObject.transform.position, gameObject.transform.forward, out RaycastHit hit, 100f) && hit.collider.TryGetComponent(out Fire fire))
         {
-            // Check if the fire extinguisher is of the right type.
-            if (fire.type == type)
+            // Check if the correct extinguisher is used.
+            if (type == fire.type)
             {
                 fire.TryExtinguish(amountExtinguishedPerSecond * Time.deltaTime);
             }
         }
     }
-
-
 }
