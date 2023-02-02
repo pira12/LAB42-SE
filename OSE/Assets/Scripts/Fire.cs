@@ -14,8 +14,6 @@ public class Fire : MonoBehaviour
     [SerializeField] private float regenDelay = 2.5f;
     [SerializeField] private float regenRate = 0.1f;
 
-    [SerializeField] public BlusserType type;
-
     private bool isLit = true;
 
     private void Start()
