@@ -8,9 +8,10 @@ Christiaan Molier, 13170783
 
 Rénan:
 Maken van projectplan en plattegrond. 
+Tutorial slides gemaakt.
 Maken en aanpassen van 3D modellen en textures.
 Plannen en maken van ontruimingsplannen.
-Tutorial slides gemaakt.
+Plannen en bouwen van levels.
 
 Yoshi:
 
