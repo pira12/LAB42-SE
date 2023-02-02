@@ -7140,6 +7140,75 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3
   m_Center: {x: -0.04593277, y: -0.24300878, z: -0.020085335}
+--- !u!1001 &2144714652
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.622837
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9878047
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.7708489
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1033925064997507609, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700310461208976386, guid: 717648976c3d3fc4a87ede9e921c40bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Timer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 717648976c3d3fc4a87ede9e921c40bb, type: 3}
 --- !u!4 &543450651704757951
 Transform:
   m_ObjectHideFlags: 0
