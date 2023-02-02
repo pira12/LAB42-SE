@@ -20,10 +20,12 @@ public class Fire : MonoBehaviour
 
     private void Start()
     {
+        // Play the sound of the fire.
         sound = GetComponent<AudioSource>();
         sound.Play();
         startIntensities = new float[fireParticleSystems.Length];
 
+        // use the set intensities for the emission rate of the fire.
         for (int i = 0; i < fireParticleSystems.Length; i++)
         {
             startIntensities[i] = fireParticleSystems[i].emission.rateOverTime.constant;
@@ -34,6 +36,7 @@ public class Fire : MonoBehaviour
 
     private void Update()
     {
+        // Check if the fire is still on and the intensity is high enough too stay on.
         if (isLit && currentIntensity < 1.0f && Time.time - timeLastWatered >= regenDelay)
         {
             currentIntensity += regenRate * Time.deltaTime;
@@ -48,6 +51,7 @@ public class Fire : MonoBehaviour
 
         ChangeIntensity();
 
+        // The fire has stopped.
         if (currentIntensity <= 0 )
         {
             isLit = false;
@@ -60,6 +64,7 @@ public class Fire : MonoBehaviour
 
     private void ChangeIntensity()
     {
+        // The emission rate is linked to the intensity.
         for (int i = 0; i < fireParticleSystems.Length; i++)
         {
             var emission = fireParticleSystems[i].emission;
