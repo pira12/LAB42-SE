@@ -16,6 +16,7 @@ public class Footsteps : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // When the player is moving the footsteps are given random volume and pitch to make it sound natural.
         if(cc.isGrounded == true && cc.velocity.magnitude > 1f && GetComponent<AudioSource>().isPlaying == false)
         {
             GetComponent<AudioSource>().volume = Random.Range(0.8f, 1f);

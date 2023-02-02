@@ -26,6 +26,7 @@ public class ButtonVR : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // When the button is pressed.
         if (!isPressed)
         {
             button.transform.localPosition = new Vector3(0, 0.041f, 0);
@@ -38,6 +39,7 @@ public class ButtonVR : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        // Releasing the button and resettting position.
         if (other.gameObject == presser)
         {
             button.transform.localPosition = new Vector3(0, 0.169f, 0);
