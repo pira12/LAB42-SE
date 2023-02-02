@@ -1287,7 +1287,7 @@ PrefabInstance:
     - target: {fileID: 3782170731795279185, guid: b7e31676ebb931d45887b0cb9602653d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3782170731795279185, guid: b7e31676ebb931d45887b0cb9602653d,
         type: 3}
@@ -1368,7 +1368,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e971d99f59742dd4aaef89b68dce71f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e971d99f59742dd4aaef89b68dce71f0,
         type: 3}
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionManager: {fileID: 521832977}
-  sceneIndex: 0
+  sceneIndex: 8
 --- !u!65 &577646398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1485,7 +1485,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &608188639
 PrefabInstance:
@@ -1577,7 +1577,7 @@ PrefabInstance:
     - target: {fileID: 9041302117130686171, guid: 5ba54fe7be215f84b8ac2bcf790858de,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 9041302117130686171, guid: 5ba54fe7be215f84b8ac2bcf790858de,
         type: 3}
@@ -2499,7 +2499,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1300121467
 MonoBehaviour:
@@ -2990,7 +2990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionManager: {fileID: 521832977}
-  sceneIndex: 0
+  sceneIndex: 8
 --- !u!65 &1592678881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3233,7 +3233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionManager: {fileID: 521832977}
-  sceneIndex: 0
+  sceneIndex: 8
 --- !u!65 &1777299997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10167,7 +10167,7 @@ Transform:
   m_Children:
   - {fileID: 6738450969064913797}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 210, z: 0}
 --- !u!1 &919132147969774597
 GameObject:
