@@ -9,6 +9,6 @@ public class TriggerSceneChange : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        sceneTransitionManager.GoToSceneAsync(sceneIndex);
+        sceneTransitionManager.GoToScene(sceneIndex);
     }
 }

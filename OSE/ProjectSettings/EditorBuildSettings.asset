@@ -5,30 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/TestAnimatedHands.unity
-    guid: aeb646f5eb9ca6e4c88bde1e512e81d5
-  - enabled: 0
-    path: Assets/Scenes/Tutorial Room.unity
-    guid: f77d44367eb88534195aec74ea469ecf
-  - enabled: 0
-    path: Assets/Scenes/MainScene.unity
-    guid: 4c98e5a94a6a4b646aaccac48ea4cada
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-<<<<<<< HEAD
-=======
-    path: Assets/Scenes/SkipScene.unity
-    guid: a3808966108c1464e847aadc39fd18a7
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 7adb9f4d43a167b4eb87480faa8e51cb
->>>>>>> 0d30da8d7383f024428e6b4599fa7c41edcd20fc
     path: Assets/Scenes/TutorialScene.unity
     guid: 7adb9f4d43a167b4eb87480faa8e51cb
   - enabled: 1
@@ -58,10 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/05GroteBrand.unity
     guid: a86fa4e25acfcae46b073223ec64d14b
-  - enabled: 0
-    path: Assets/Scenes/02ServerBrand.unity
-    guid: 81ff6015736d9a9489902a788accb385
-
+  - enabled: 1
+    path: Assets/Scenes/SkipScene 4.unity
+    guid: 9d6840e8374466e4c848b573fcda6679
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0617fc3e865969f45bb49d2d1bd61657,
       type: 2}

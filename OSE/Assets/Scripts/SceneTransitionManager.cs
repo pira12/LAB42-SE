@@ -38,5 +38,6 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
         operation.allowSceneActivation = true;
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneIndex));
     }
 }

@@ -1420,6 +1420,7 @@ MonoBehaviour:
   - {fileID: 627325824}
   regenDelay: 2.5
   regenRate: 0.1
+  type: 0
 --- !u!82 &627325826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4674,6 +4675,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3291173693829582182, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7373022540641541890, guid: 343c9ed19eb07ce4f8e87bc455b99805,
         type: 3}
       propertyPath: m_Name
