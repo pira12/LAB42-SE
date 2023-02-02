@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionManager: {fileID: 520421563}
-  sceneIndex: 0
+  sceneIndex: 1
 --- !u!1001 &1587726851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1298,10 +1298,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a124efbd92f82fa408c76a000235d278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  score2: 0
-  score3: 0
-  time: 0
+  alarmGeactiveert: 0
+  brandGeblust: 0
+  correcteBrandblusserGebruikt: 0
+  tijd: 0
 --- !u!1 &1607311781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneTransitionManager: {fileID: 520421563}
-  sceneIndex: 1
+  sceneIndex: 3
 --- !u!114 &1703822852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1475,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763e22cabd4d98048adfb1b5f8367473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completed: 0
   door: {fileID: 442898394}
 --- !u!1 &1857974529
 GameObject:
