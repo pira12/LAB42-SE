@@ -4,9 +4,10 @@ public class StateManager : MonoBehaviour
 {
     public static StateManager instance;
 
-    public int score;
-    public int score2;
-    public int score3;
+    public bool alarmGeactiveert;
+    public bool brandGeblust;
+    public bool correcteBrandblusserGebruikt;
+    public float tijd;
 
     private void Awake()
     {
