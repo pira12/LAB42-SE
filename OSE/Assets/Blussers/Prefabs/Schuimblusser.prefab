@@ -5055,6 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amountExtinguishedPerSecond: 0.3
+  type: 3
 --- !u!1 &8909156669790488852
 GameObject:
   m_ObjectHideFlags: 0
