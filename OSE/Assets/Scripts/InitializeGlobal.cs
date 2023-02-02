@@ -6,8 +6,9 @@ public class InitializeGlobal : MonoBehaviour
     void Start()
     {
         // Initialize the global state
-        StateManager.instance.score = 0;
-        StateManager.instance.score2 = 0;
-        StateManager.instance.score3 = 0;
+        StateManager.instance.alarmGeactiveert = false;
+        StateManager.instance.brandGeblust = false;
+        StateManager.instance.correcteBrandblusserGebruikt = false;
+        StateManager.instance.tijd = 0;
     }
 }
