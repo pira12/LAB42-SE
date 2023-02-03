@@ -5262,6 +5262,11 @@ PrefabInstance:
       objectReference: {fileID: 5330758751491801061}
     - target: {fileID: 4356810281341169330, guid: fb5ed8b28dff7e74ab2e1fc107ecba77,
         type: 3}
+      propertyPath: hose
+      value: 
+      objectReference: {fileID: 1581536890805175946}
+    - target: {fileID: 4356810281341169330, guid: fb5ed8b28dff7e74ab2e1fc107ecba77,
+        type: 3}
       propertyPath: pinMesh
       value: 
       objectReference: {fileID: 5330758751305460522}

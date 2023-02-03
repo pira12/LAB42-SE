@@ -123,6 +123,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &56524100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337087, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Blusser Pickup Offset
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89779071a8503394382a89d0222182d4, type: 3}
+--- !u!4 &56524101 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 56524100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &425680368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1215,6 +1290,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 916737439632528878, guid: f2a0fba22f89f304c8c993572abd6de5,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 56524101}
     - target: {fileID: 1782920712192460482, guid: f2a0fba22f89f304c8c993572abd6de5,
         type: 3}
       propertyPath: m_RootOrder
@@ -1290,6 +1370,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: plan, alarm, blussers v1
       objectReference: {fileID: 0}
+    - target: {fileID: 4773031412603610719, guid: f2a0fba22f89f304c8c993572abd6de5,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 56524101}
+    - target: {fileID: 5436099558410710221, guid: f2a0fba22f89f304c8c993572abd6de5,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 56524101}
+    - target: {fileID: 7142034151679531031, guid: f2a0fba22f89f304c8c993572abd6de5,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 56524101}
+    - target: {fileID: 7509082451610173442, guid: f2a0fba22f89f304c8c993572abd6de5,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 56524101}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2a0fba22f89f304c8c993572abd6de5, type: 3}
 --- !u!1001 &1797416760
