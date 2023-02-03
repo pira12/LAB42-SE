@@ -29,6 +29,10 @@ public class Extinguisher : MonoBehaviour
             {
                 fire.TryExtinguish(amountExtinguishedPerSecond * Time.deltaTime);
             }
+            else
+            {
+                StateManager.instance.correcteBrandblusserGebruikt = false;
+            }
         }
     }
 }

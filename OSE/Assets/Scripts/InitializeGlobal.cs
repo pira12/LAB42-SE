@@ -15,8 +15,8 @@ public class InitializeGlobal : MonoBehaviour
     void Start()
     {
         // Initialize the global state
-        StateManager.instance.alarmGeactiveert = true;
-        StateManager.instance.brandGeblust = true;
+        StateManager.instance.alarmGeactiveert = false;
+        StateManager.instance.brandGeblust = false;
         StateManager.instance.correcteBrandblusserGebruikt = true;
         StateManager.instance.tijd = 0;
     }
