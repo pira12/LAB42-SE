@@ -24,13 +24,19 @@ public class Pin : MonoBehaviour
 
     //
     // Summary:
-    //     Bool to check if the controller is close to the pin.
-    private bool inProximity = false;
+    //     Mesh of the pin to disable (disabling gameObject disables sound).
+    [SerializeField]
+    private GameObject pinMesh;
 
     //
     // Summary:
     //     Bool to check if the pin is in the fire extinguisher.
     private bool hasPin = true;
+
+    //
+    // Summary:
+    //     Bool to check if the controller is close to the pin.
+    private bool inProximity = false;
 
     //
     // Summary:
@@ -48,7 +54,7 @@ public class Pin : MonoBehaviour
     //
     // Summary:
     //     On trigger enter, the controller is in range of the pin.
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
         inProximity = true;
     }
@@ -56,7 +62,7 @@ public class Pin : MonoBehaviour
     //
     // Summary:
     //     On trigger exit, the controller is out of range of the pin.
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider other)
     {
         inProximity = false;
     }
@@ -95,6 +101,7 @@ public class Pin : MonoBehaviour
 
         // Hide the pin and its components.
         sound.Play();
-        gameObject.SetActive(false);
+        hasPin = false;
+        pinMesh.SetActive(false);
     }
 }

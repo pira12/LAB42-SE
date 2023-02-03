@@ -26,7 +26,7 @@ public class Lever : MonoBehaviour
     // Summary:
     //     Reference to the pin to check if it has been removed.
     [SerializeField]
-    private GameObject pin;
+    private GameObject pinMesh;
 
     //
     // Summary:
@@ -51,6 +51,11 @@ public class Lever : MonoBehaviour
 
     //
     // Summary:
+    //     Audio fragment to play when spraying contents of extinguisher.
+    private AudioSource sound;
+
+    //
+    // Summary:
     //     On enable, monitor the action and trigger callbacks.
     private void OnEnable()
     {
@@ -60,7 +65,7 @@ public class Lever : MonoBehaviour
     //
     // Summary:
     //     On trigger enter, the controller is in range of the pin.
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
         inProximity = true;
     }
@@ -68,7 +73,7 @@ public class Lever : MonoBehaviour
     //
     // Summary:
     //     On trigger exit, the controller is out of range of the pin.
-    private void OnTriggerExit()
+    private void OnTriggerExit(Collider other)
     {
         inProximity = false;
     }
@@ -84,8 +89,10 @@ public class Lever : MonoBehaviour
             return;
         }
 
-        // Play the particle system, but disable the emission.
+        sound = GetComponent<AudioSource>();
         emission = hose.emission;
+
+        // Play the particle system, but disable the emission.
         emission.enabled = false;
         hose.Play();
 
@@ -101,11 +108,12 @@ public class Lever : MonoBehaviour
     private void SqueezeLever(InputAction.CallbackContext ctx)
     {
         // Check if the pin has been removed and the user is in range.
-        if (pin.activeInHierarchy || !inProximity)
+        if (pinMesh.activeInHierarchy || !inProximity)
         {
             return;
         }
 
+        sound.Play();
         leverSqueezed = true;
         emission.enabled = true;
     }
@@ -120,6 +128,7 @@ public class Lever : MonoBehaviour
             return;
         }
 
+        sound.Stop();
         leverSqueezed = false;
         emission.enabled = false;
     }
