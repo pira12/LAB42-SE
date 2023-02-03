@@ -753,7 +753,7 @@ MonoBehaviour:
   - {fileID: 1136664192}
   regenDelay: 2.5
   regenRate: 0.1
-  type: 0
+  type: 1
 --- !u!82 &1136664194
 AudioSource:
   m_ObjectHideFlags: 0
