@@ -323,6 +323,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5786694435049790362, guid: b7e31676ebb931d45887b0cb9602653d,
+        type: 3}
+      propertyPath: fadeScreen
+      value: 
+      objectReference: {fileID: 1993077795}
     - target: {fileID: 6727592621579849721, guid: b7e31676ebb931d45887b0cb9602653d,
         type: 3}
       propertyPath: m_Name
@@ -1120,6 +1125,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343c9ed19eb07ce4f8e87bc455b99805, type: 3}
+--- !u!114 &1993077795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1508360489882300377, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+    type: 3}
+  m_PrefabInstance: {fileID: 1993077794}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7790b9c1e5ed54595b37a34fa6cb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2067400486
 PrefabInstance:
   m_ObjectHideFlags: 0
