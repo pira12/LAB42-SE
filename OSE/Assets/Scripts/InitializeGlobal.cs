@@ -1,4 +1,13 @@
+/**
+ * InitializeGlobal.cs
+ * Authors: Christiaan Molier
+ * Date: January 2023
+ * Description: This script is used to initialize/reset the global state.
+ */
+
 using UnityEngine;
+
+
 
 public class InitializeGlobal : MonoBehaviour
 {

@@ -56,6 +56,7 @@ public class Fire : MonoBehaviour
         {
             isLit = false;
             sound.Stop();
+            StateManager.instance.brandGeblust = true;
             return true;
         }
 

@@ -1,10 +1,15 @@
+/**
+ * CompletedLevel.cs
+ * Authors: Christiaan Molier
+ * Date: January 2023
+ * Description: This script is used to check if the player has completed the level. If not the door to the next level will be red and the player can't go to the next level.
+ */
 using UnityEngine;
 
 public class CompletedLevel : MonoBehaviour
 {
 
     public GameObject door;
-    // Start is called before the first frame update
     void Start()
     {
         if (!StateManager.instance.alarmGeactiveert || !StateManager.instance.brandGeblust || !StateManager.instance.correcteBrandblusserGebruikt)

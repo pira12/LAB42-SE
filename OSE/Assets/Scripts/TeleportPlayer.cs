@@ -1,5 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+/**
+ * TeleportPlayer.cs
+ * Authors: Christiaan Molier
+ * Date: January 2023
+ * Description: This script is used to teleport the player to a new location.
+ */
+
 using UnityEngine;
 
 public class TeleportPlayer : MonoBehaviour

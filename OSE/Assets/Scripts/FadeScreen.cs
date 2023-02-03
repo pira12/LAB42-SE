@@ -1,3 +1,10 @@
+/**
+ * FadeScreen.cs
+ * Authors: Christiaan Molier
+ * Date: January 2023
+ * Description: This script is used to fade the screen in and out.
+ */
+
 using System.Collections;
 using UnityEngine;
 

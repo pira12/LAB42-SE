@@ -1,3 +1,10 @@
+/**
+ * ScoreCalculator.cs
+ * Authors: Christiaan Molier
+ * Date: January 2023
+ * Description: This script is used to calculate the score of the player.
+ * It uses the StateManager to check if the player has completed the level.
+ */
 using TMPro;
 using UnityEngine;
 

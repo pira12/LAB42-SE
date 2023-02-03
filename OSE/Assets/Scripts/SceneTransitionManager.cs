@@ -1,3 +1,11 @@
+/**
+ *  SceneTransitionManager.cs
+ *  Authors: Christiaan Molier
+ *  Date: January 2023
+ *  Description: This script is used to transition between scenes.
+ *  It uses the FadeScreen script to fade out the screen before loading the new scene.
+ *  It also has a function to load a scene asynchronously.
+ */
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,6 +13,8 @@ using UnityEngine.SceneManagement;
 public class SceneTransitionManager : MonoBehaviour
 {
     public FadeScreen fadeScreen;
+    
+    
     public void GoToScene(int sceneIndex)
     {
         StartCoroutine(GoToSceneRoutine(sceneIndex));
@@ -14,7 +24,7 @@ public class SceneTransitionManager : MonoBehaviour
         fadeScreen.FadeOut();
         yield return new WaitForSeconds(fadeScreen.fadeDuration);
         
-        // Start new scene
+        // Load new scene
         SceneManager.LoadScene(sceneIndex);
     }
     
@@ -26,10 +36,11 @@ public class SceneTransitionManager : MonoBehaviour
     {
         fadeScreen.FadeOut();
 
-        // Start new scene
+        // Load new scene
         AsyncOperation operation =  SceneManager.LoadSceneAsync(sceneIndex);
         operation.allowSceneActivation = false;
-
+        
+        // Wait for fade to finish before loading the scene
         float timer = 0;
         while (timer <= fadeScreen.fadeDuration && !operation.isDone)
         {
