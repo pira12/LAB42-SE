@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5825569110073104408}
   - component: {fileID: 5825569110073104409}
   - component: {fileID: 5825569110073104410}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass door.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 5825569110145916632}
   - component: {fileID: 5825569110145916633}
   - component: {fileID: 5825569110145916634}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass.003
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 5825569110662097240}
   - component: {fileID: 5825569110662097241}
   - component: {fileID: 5825569110662097242}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass door.011
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 5825569110864400266}
   - component: {fileID: 5825569110864400267}
   - component: {fileID: 5825569110864400268}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass door.013
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 5825569110886004681}
   - component: {fileID: 5825569110886004682}
   - component: {fileID: 5825569110886004683}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass.014
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 5825569111059378703}
   - component: {fileID: 5825569111059378688}
   - component: {fileID: 5825569111059378689}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -130,6 +130,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3291173693829582182, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022540630371018, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.75
+      objectReference: {fileID: 0}
     - target: {fileID: 7373022540641541890, guid: 343c9ed19eb07ce4f8e87bc455b99805,
         type: 3}
       propertyPath: m_Name
@@ -190,8 +200,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7373022541037420333, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541037420333, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541037420333, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541037420333, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541280651440, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541280651440, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541280651440, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7373022541280651440, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343c9ed19eb07ce4f8e87bc455b99805, type: 3}
+--- !u!114 &425680369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1508360489882300377, guid: 343c9ed19eb07ce4f8e87bc455b99805,
+    type: 3}
+  m_PrefabInstance: {fileID: 425680368}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7790b9c1e5ed54595b37a34fa6cb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &521832976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,6 +316,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5786694435049790362, guid: b7e31676ebb931d45887b0cb9602653d,
+        type: 3}
+      propertyPath: fadeScreen
+      value: 
+      objectReference: {fileID: 425680369}
     - target: {fileID: 6727592621579849721, guid: b7e31676ebb931d45887b0cb9602653d,
         type: 3}
       propertyPath: m_Name

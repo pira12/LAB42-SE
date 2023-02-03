@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7375959158919939272}
   - component: {fileID: 2058969395147970029}
   - component: {fileID: 735104434733357084}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Glass.008
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 3497815204496642539}
   - component: {fileID: 7825334520896827761}
   - component: {fileID: 3108826611772648723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Single Glass door
   m_TagString: door
   m_Icon: {fileID: 0}

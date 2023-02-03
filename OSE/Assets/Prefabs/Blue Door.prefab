@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5706442171760587039}
   - component: {fileID: 2910444604363291845}
   - component: {fileID: 5234671077630548062}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Window Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 1195906457015790023}
   - component: {fileID: 2382458840794661460}
   - component: {fileID: 3816559844890179645}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Door.009
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 1428907417749477723}
   - component: {fileID: 6667936435751173434}
   - component: {fileID: 2111245455498911357}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Blue Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
