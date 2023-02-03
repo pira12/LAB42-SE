@@ -407,6 +407,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 425b1cc47060d254281c1822e0f418eb, type: 3}
+--- !u!1001 &629775494
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489038792597337087, guid: 89779071a8503394382a89d0222182d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Blusser Pickup Offset
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89779071a8503394382a89d0222182d4, type: 3}
+--- !u!4 &629775495 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4489038792597337056, guid: 89779071a8503394382a89d0222182d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 629775494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &885564930 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1508360489882300377, guid: 343c9ed19eb07ce4f8e87bc455b99805,
@@ -1397,6 +1472,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1689096544897750313, guid: e2c9fe8d14d684b4b87b6ec2f1002719,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 629775495}
+    - target: {fileID: 2178951822082859421, guid: e2c9fe8d14d684b4b87b6ec2f1002719,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 629775495}
+    - target: {fileID: 3762081636237245943, guid: e2c9fe8d14d684b4b87b6ec2f1002719,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 629775495}
+    - target: {fileID: 4547964768275118598, guid: e2c9fe8d14d684b4b87b6ec2f1002719,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 629775495}
     - target: {fileID: 4953452807678655688, guid: e2c9fe8d14d684b4b87b6ec2f1002719,
         type: 3}
       propertyPath: m_RootOrder
@@ -1457,6 +1552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: plan, alarm, blussers bga
       objectReference: {fileID: 0}
+    - target: {fileID: 5816645470094542093, guid: e2c9fe8d14d684b4b87b6ec2f1002719,
+        type: 3}
+      propertyPath: m_snapOffset
+      value: 
+      objectReference: {fileID: 629775495}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2c9fe8d14d684b4b87b6ec2f1002719, type: 3}
 --- !u!4 &6738450969064913797
